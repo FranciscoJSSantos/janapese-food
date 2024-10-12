@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+  .footer_section_mobile {
+    display: grid !important;
+  }
+
+  .footer_section {
+    display: grid !important;
+    height: 70vh !important;
+    display: none !important;
+
+    div {
+      width: 100% !important;
+    }
+    // .fist_backdrop {
+    //   display: none !important;
+    // }
+    // .fist_image_1 {
+    //   width: 100% !important;
+    // }
+    // .first_mobile {
+    //   width: auto !important;
+    // }
+  }
+}

@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+  .experiencia_component {
+    display: grid !important;
+    margin-bottom: 8rem !important;
+
+    form {
+      display: grid !important;
+      gap: 2rem !important;
+      justify-content: center !important;
+
+      button {
+        width: 200px !important;
+      }
+
+      .experiencia_button {
+        justify-content: center !important;
+        width: 300px !important;
+        display: flex !important;
+      }
+    }
+  }
+}
+input[type="radio"] {
+  accent-color: #a84146;
+  border: none !important;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  padding: 5px 10px;
+}

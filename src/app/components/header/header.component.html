@@ -1,0 +1,233 @@
+<div class="header_component card">
+  <p-toolbar>
+    <ng-template pTemplate="start">
+      <img src="assets/logo/logo.png" style="width: 33; height: 35" />
+    </ng-template>
+    <ng-template pTemplate="center" let-item let-root="root">
+      <div class="flex flex-wrap align-items-center gap-8">
+        <a
+          style="
+            font-weight: bold;
+            font-family: 'Inria Sans', sans-serif;
+            font-size: 1.4rem;
+          "
+          class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle transition-all transition-duration-200"
+        >
+          Sobre
+        </a>
+        <a
+          style="
+            font-weight: bold;
+            font-family: 'Inria Sans', sans-serif;
+            font-size: 1.4rem;
+          "
+          class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle transition-all transition-duration-200"
+        >
+          Cardápio
+        </a>
+        <a
+          style="
+            font-weight: bold;
+            font-family: 'Inria Sans', sans-serif;
+            font-size: 1.4rem;
+          "
+          class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle transition-all transition-duration-200"
+        >
+          Localização
+        </a>
+        <a
+          style="
+            font-weight: bold;
+            font-family: 'Inria Sans', sans-serif;
+            font-size: 1.4rem;
+          "
+          class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle transition-all transition-duration-200"
+        >
+          Contato
+        </a>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <div class="flex align-items-center gap-4">
+        <a
+          class="ml-2 mr-2"
+          href="https://www.facebook.com/hashiluzia"
+          target="_blank"
+          ><i
+            class="pi pi-facebook"
+            style="font-size: 1.5rem; color: #ffffff"
+          ></i
+        ></a>
+        <a
+          class="ml-2 mr-2"
+          href="https://www.instagram.com/hashiluziacanal/"
+          target="_blank"
+          ><i
+            class="pi pi-instagram"
+            style="font-size: 1.5rem; color: #ffffff"
+          ></i
+        ></a>
+        <a
+          class="ml-2 mr-2"
+          href="https://wa.me/5579988446027
+        "
+          target="_blank"
+          ><i
+            class="pi pi-whatsapp"
+            style="font-size: 1.5rem; color: #ffffff"
+          ></i
+        ></a>
+      </div>
+    </ng-template>
+  </p-toolbar>
+</div>
+<section
+  class="header_component_mobile"
+  style="
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 120px;
+    width: 100%;
+    display: none;
+    overflow-x: hidden;
+  "
+>
+  <div style="margin-left: 1rem">
+    <img src="assets/logo/logo.png" style="width: 33; height: 35" />
+  </div>
+  <div style="margin-right: 1rem">
+    <mat-icon
+      (click)="changeIcon = !changeIcon"
+      style="color: #fff0de; font-size: 1.8rem; cursor: pointer"
+      >{{ changeIcon ? "menu" : "close" }}</mat-icon
+    >
+  </div>
+</section>
+@if(!changeIcon) {
+<section
+  style="
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 99999;
+    opacity: 0.9;
+    display: grid;
+  "
+>
+  <div
+    style="
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    "
+  >
+    <a
+      style="
+        margin-top: 1rem;
+        font-weight: bold;
+        font-family: 'Inria Sans', sans-serif;
+        font-size: 1.4rem;
+      "
+      class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle transition-all transition-duration-200"
+    >
+      Sobre
+    </a>
+    <a
+      style="
+        font-weight: bold;
+        font-family: 'Inria Sans', sans-serif;
+        font-size: 1.4rem;
+      "
+      class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle transition-all transition-duration-200"
+    >
+      Cardápio
+    </a>
+    <a
+      style="
+        font-weight: bold;
+        font-family: 'Inria Sans', sans-serif;
+        font-size: 1.4rem;
+      "
+      class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle transition-all transition-duration-200"
+    >
+      Localização
+    </a>
+    <a
+      style="
+        font-weight: bold;
+        font-family: 'Inria Sans', sans-serif;
+        font-size: 1.4rem;
+      "
+      class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle transition-all transition-duration-200"
+    >
+      Contato
+    </a>
+  </div>
+  <div
+    style="
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+    "
+  >
+    <a
+      class="ml-2 mr-2"
+      href="https://www.facebook.com/hashiluzia"
+      target="_blank"
+      ><i class="pi pi-facebook" style="font-size: 1.5rem; color: #ffffff"></i
+    ></a>
+    <a
+      class="ml-2 mr-2"
+      href="https://www.instagram.com/hashiluziacanal/"
+      target="_blank"
+      ><i class="pi pi-instagram" style="font-size: 1.5rem; color: #ffffff"></i
+    ></a>
+    <a
+      class="ml-2 mr-2"
+      href="https://wa.me/5579988446027
+    "
+      target="_blank"
+      ><i class="pi pi-whatsapp" style="font-size: 1.5rem; color: #ffffff"></i
+    ></a>
+  </div>
+</section>
+}
+
+<div
+  style="
+    height: 100px;
+    width: 100%;
+    background-color: #a84146;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  "
+>
+  <div>
+    <img
+      style="width: 60px; height: 60px"
+      src="assets/header/header_image1.png"
+      alt=""
+    />
+  </div>
+  <div style="text-align: center" class="work_all">
+    <p style="font-weight: bold; color: #ffffff; font-size: 1.2rem">
+      FUNCIONAMOS TODOS OS DIAS
+    </p>
+    <p style="font-weight: bold; color: #ffffff; font-size: 1.2rem">
+      DAS 18:00 ás 23:00
+    </p>
+  </div>
+  <div>
+    <img
+      style="width: 60px; height: 60px"
+      src="assets/header/header_image2.png"
+      alt=""
+    />
+  </div>
+</div>

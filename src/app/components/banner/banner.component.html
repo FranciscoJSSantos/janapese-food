@@ -1,0 +1,18 @@
+<p-galleria
+  class="banner_component"
+  style="display: flex; justify-content: center; align-items: center"
+  [value]="images"
+  (valueChange)="handleValueChange($event)"
+  [autoPlay]="true"
+  [numVisible]="5"
+  [circular]="true"
+  [showItemNavigators]="true"
+  [showThumbnails]="false"
+  [responsiveOptions]="responsiveOptions"
+>
+  <ng-template pTemplate="item" let-item>
+    <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+  </ng-template>
+</p-galleria>
+<!-- adicionar no p-galleria -->
+<!-- [containerStyle]="{ 'max-width': '1600px' }" -->

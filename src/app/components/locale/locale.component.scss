@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) {
+  .locale_component {
+    display: grid !important;
+    height: 70vh !important;
+
+    margin-bottom: 4rem !important;
+
+    p {
+      text-align: center !important;
+    }
+
+    h2 {
+      text-align: center !important;
+    }
+
+    button {
+      width: 100% !important;
+      margin-bottom: 4rem !important;
+      p {
+        font-size: 1rem !important;
+      }
+    }
+
+    div {
+      width: 100% !important;
+    }
+    .locale_backdrop {
+      display: none !important;
+    }
+    .locale_image_1 {
+      width: 100% !important;
+    }
+    .locale_mobile {
+      width: auto !important;
+    }
+  }
+}

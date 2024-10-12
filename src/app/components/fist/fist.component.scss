@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+  .fist_component {
+    display: grid !important;
+    height: 70vh !important;
+
+    h2 {
+      text-align: center !important;
+    }
+
+    p {
+      text-align: center !important;
+    }
+    div {
+      width: 100% !important;
+    }
+    .fist_backdrop {
+      display: none !important;
+    }
+    .fist_image_1 {
+      width: 100% !important;
+    }
+    .first_mobile {
+      width: auto !important;
+    }
+  }
+}

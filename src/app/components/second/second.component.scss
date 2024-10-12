@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+  .second_component {
+    flex-direction: column-reverse !important;
+    padding: 2rem !important;
+    gap: 4rem !important;
+    flex-wrap: nowrap !important;
+
+    p {
+      text-align: center !important;
+    }
+
+    h2 {
+      text-align: center !important;
+    }
+    div {
+      width: 100% !important;
+      text-align: center !important;
+    }
+    .second_backdrop {
+      display: none !important;
+    }
+    .second_image_1 {
+      width: 100% !important;
+    }
+    .second_mobile {
+      width: auto !important;
+    }
+  }
+}

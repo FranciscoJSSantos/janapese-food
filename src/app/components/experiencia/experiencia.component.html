@@ -1,0 +1,178 @@
+<div
+  style="
+    height: 100px;
+    width: 100%;
+    background-color: #a84146;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  "
+>
+  <div style="text-align: center">
+    <p style="font-weight: bold; color: #ffffff; font-size: 1.2rem">
+      Conte-nos como foi sua experiência
+    </p>
+  </div>
+</div>
+<section
+  class="experiencia_component"
+  style="
+    height: 70vh;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  "
+>
+  <form
+    action=""
+    style="gap: 14rem; display: flex; justify-content: space-between"
+  >
+    <div style="width: 50%; display: flex; flex-direction: column; gap: 2rem">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 200px;
+          gap: 0.5rem;
+          align-items: start;
+        "
+      >
+        <label for="" style="color: #fff">Nome</label>
+        <input
+          id="nome"
+          placeholder="João Lima"
+          type="text"
+          style="height: 40px; width: 300px; border-radius: 10px; border: none"
+        />
+      </div>
+
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 200px;
+          gap: 0.5rem;
+          align-items: start;
+        "
+      >
+        <label for="" style="color: #fff">Email</label>
+        <input
+          id="email"
+          placeholder="joao@gmail.com"
+          type="mail"
+          style="height: 40px; width: 300px; border-radius: 10px; border: none"
+        />
+      </div>
+
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 200px;
+          gap: 0.5rem;
+          align-items: start;
+        "
+      >
+        <label for="" style="color: #fff">Telefone</label>
+        <input
+          id="telefone"
+          type="tel"
+          inputmode="numeric"
+          placeholder="(99) 99999-9999"
+          style="height: 40px; width: 300px; border-radius: 10px; border: none"
+        />
+      </div>
+    </div>
+    <div style="width: 50%">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 300px;
+          color: #fff;
+          gap: 0.5rem;
+          align-items: start;
+        "
+      >
+        <label for="" style="color: #fff">Como foi sua experiência?</label>
+        <div
+          style="
+            font-size: 1rem !important;
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            text-align: center;
+            align-items: center;
+          "
+        >
+          <input
+            type="radio"
+            name="rank"
+            id="radio1"
+            style="border: none !important"
+          />
+          <label for="radio1">Excelente</label>
+
+          <input
+            type="radio"
+            name="rank"
+            id="radio2"
+            style="border: none !important"
+          />
+          <label for="radio2">Boa</label>
+
+          <input
+            type="radio"
+            name="rank"
+            id="radio3"
+            style="border: none !important"
+          />
+          <label for="radio3">Pode melhorar</label>
+        </div>
+      </div>
+
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 200px;
+
+          gap: 0.5rem;
+          align-items: start;
+        "
+      >
+        <label for="" style="color: #fff">Conte-nos um pouco mais</label>
+        <textarea
+          id="experiencia"
+          style="height: 100px; width: 300px; border-radius: 10px; border: none"
+        ></textarea>
+      </div>
+      <div
+        style="justify-content: end; display: flex"
+        class="experiencia_button"
+      >
+        <button
+          (click)="sendExp()"
+          style="
+            background-color: #ffffff;
+            color: #a54045;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: row-reverse;
+            font-size: 1rem;
+            height: 30px;
+            margin-top: 2rem;
+          "
+          mat-flat-button
+        >
+          <p>Enviar</p>
+        </button>
+      </div>
+    </div>
+  </form>
+</section>

@@ -1,0 +1,51 @@
+<section
+  class="locale_component"
+  style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    padding: 2rem;
+  "
+>
+  <!-- text -->
+  <div style="width: 50%; font-size: 1.4rem">
+    <h2 style="color: #ffffff">
+      Estamos
+      <span style="color: #a54045">Localizados</span>
+    </h2>
+    <p
+      class="locale_mobile"
+      style="color: #8c8c8a; font-size: 1.2rem; width: 800px"
+    >
+      R. Dr. Márcio Rollemberg Leite, 1 - Luzia
+    </p>
+
+    <button
+      (click)="goToMaps()"
+      style="
+        background-color: #ffffff;
+        color: #a54045;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row-reverse;
+        font-size: 1.4rem;
+        height: 60px;
+        margin-top: 2rem;
+      "
+      mat-flat-button
+    >
+      <p>Clique para vir até a gente️</p>
+      <mat-icon style="margin-left: 1rem; font-size: 1.4rem"
+        >location_on</mat-icon
+      >
+    </button>
+  </div>
+  <!-- image -->
+  <div style="width: 50%">
+    <img src="assets/backdrop/locale.png" alt="" class="locale_image_1" />
+  </div>
+</section>

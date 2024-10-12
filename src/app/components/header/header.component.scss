@@ -1,0 +1,28 @@
+.header_component {
+  a {
+    &:hover {
+      color: #a84146 !important;
+    }
+  }
+  i {
+    &:hover {
+      color: #a84146 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_component {
+    display: none !important;
+  }
+  .header_component_mobile {
+    display: flex !important;
+    padding: 2rem !important;
+  }
+
+  .work_all {
+    p {
+      font-size: 0.8rem !important;
+    }
+  }
+}

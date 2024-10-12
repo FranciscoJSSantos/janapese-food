@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+  .banner_component {
+    display: grid !important;
+  }
+
+  img {
+    object-fit: cover !important;
+    height: 300px !important;
+  }
+}
