@@ -1,0 +1,73 @@
+<section
+  style="
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  "
+>
+  @for (item of cardapioList; track $index) {
+  <div
+    (click)="checkFilter(item.type); toggleSelection($index)"
+    class="menu_component"
+    [ngStyle]="{
+      'background-color': selectedIndex === $index ? '#a84146' : 'transparent'
+    }"
+    style="
+      width: auto !important;
+      border: 1px solid #a84146;
+      width: 200px;
+      max-width: auto !important;
+      height: 50px;
+
+      border-radius: 15px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 1rem;
+    "
+  >
+    <p style="margin-left: 1rem; font-weight: bold">{{ item.name }}</p>
+    <img
+      src="{{ item.img }}"
+      alt="{{ item.name }}"
+      style="width: 30px; height: 30px; margin-right: 1rem"
+    />
+  </div>
+
+  }
+</section>
+
+<!-- cardapios -->
+<section class="cardapio_component">
+  <h2>Cardápio</h2>
+
+  <div class="carousel-container">
+    <div
+      class="carousel"
+      #carousel
+      (mousedown)="onMouseDown($event)"
+      (mouseleave)="onMouseLeave()"
+      (mouseup)="onMouseUp()"
+      (mousemove)="onMouseMove($event)"
+    >
+      <div
+        *ngFor="let item of filteredFoodList"
+        class="carousel-item"
+        (click)="openDialog(item)"
+      >
+        <img class="zoom" [src]="item.img" [alt]="item.name" />
+        <p class="food-name">{{ item.name }}</p>
+        <p class="food-value">{{ item.value | currency : "BRL" }}</p>
+      </div>
+    </div>
+  </div>
+</section>

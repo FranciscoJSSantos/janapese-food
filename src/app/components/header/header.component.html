@@ -6,6 +6,7 @@
     <ng-template pTemplate="center" let-item let-root="root">
       <div class="flex flex-wrap align-items-center gap-8">
         <a
+          routerLink="/home"
           style="
             font-weight: bold;
             font-family: 'Inria Sans', sans-serif;
@@ -13,9 +14,10 @@
           "
           class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle transition-all transition-duration-200"
         >
-          Sobre
+          Home
         </a>
         <a
+          routerLink="/menu"
           style="
             font-weight: bold;
             font-family: 'Inria Sans', sans-serif;
@@ -126,6 +128,8 @@
     "
   >
     <a
+      (click)="changeIcon = !changeIcon"
+      routerLink="/home"
       style="
         margin-top: 1rem;
         font-weight: bold;
@@ -134,9 +138,11 @@
       "
       class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle transition-all transition-duration-200"
     >
-      Sobre
+      Home
     </a>
     <a
+      (click)="changeIcon = !changeIcon"
+      routerLink="/menu"
       style="
         font-weight: bold;
         font-family: 'Inria Sans', sans-serif;
@@ -147,6 +153,7 @@
       Cardápio
     </a>
     <a
+      (click)="changeIcon = !changeIcon"
       style="
         font-weight: bold;
         font-family: 'Inria Sans', sans-serif;
@@ -157,6 +164,7 @@
       Localização
     </a>
     <a
+      (click)="changeIcon = !changeIcon"
       style="
         font-weight: bold;
         font-family: 'Inria Sans', sans-serif;
@@ -197,37 +205,3 @@
   </div>
 </section>
 }
-
-<div
-  style="
-    height: 100px;
-    width: 100%;
-    background-color: #a84146;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  "
->
-  <div>
-    <img
-      style="width: 60px; height: 60px"
-      src="assets/header/header_image1.png"
-      alt=""
-    />
-  </div>
-  <div style="text-align: center" class="work_all">
-    <p style="font-weight: bold; color: #ffffff; font-size: 1.2rem">
-      FUNCIONAMOS TODOS OS DIAS
-    </p>
-    <p style="font-weight: bold; color: #ffffff; font-size: 1.2rem">
-      DAS 18:00 ás 23:00
-    </p>
-  </div>
-  <div>
-    <img
-      style="width: 60px; height: 60px"
-      src="assets/header/header_image2.png"
-      alt=""
-    />
-  </div>
-</div>

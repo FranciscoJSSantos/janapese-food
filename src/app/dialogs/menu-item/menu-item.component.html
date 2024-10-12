@@ -1,0 +1,55 @@
+<section
+  style="
+    width: 330px;
+    height: auto;
+    background-color: #1a1a1a;
+    border: none !important;
+  "
+>
+  <img src="{{ data.img }}" alt="" style="width: 330px; object-fit: cover" />
+  <div style="display: grid; margin-top: 1rem; margin-left: 1rem; gap: 1rem">
+    <h3
+      style="font-weight: bold; font-size: 1.2rem; color: #fff; margin: 0.2rem"
+    >
+      {{ data.name }}
+    </h3>
+    <p
+      style="font-weight: bold; font-size: 1rem; color: #a84146; margin: 0.2rem"
+    >
+      {{ data.value | currency : "BRL" }}
+    </p>
+    <h3
+      style="font-weight: bold; font-size: 1.2rem; color: #fff; margin: 0.2rem"
+    >
+      Descrição:
+    </h3>
+    <p
+      style="
+        font-weight: medium;
+        font-size: 1rem;
+        color: #8c8c8a;
+        margin: 0.2rem;
+      "
+    >
+      {{ data.description }}
+    </p>
+  </div>
+  <div
+    style="
+      display: flex;
+      justify-content: start;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    "
+  >
+    <button
+      (click)="close()"
+      mat-mini-fab
+      style="background-color: #a84146 !important"
+      aria-label="fechar"
+    >
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </div>
+</section>

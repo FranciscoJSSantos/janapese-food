@@ -1,0 +1,72 @@
+.menu_component {
+  &:hover {
+    background-color: #fff0de !important;
+  }
+
+  &:hover {
+    color: #a84146 !important;
+  }
+}
+
+.cardapio_component {
+  h2 {
+    font-family: "Jolly Lodger", monospace;
+    font-size: 3rem;
+    color: #a84146;
+    margin-left: 2rem;
+  }
+
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .carousel-item {
+    display: grid;
+    align-items: start;
+    cursor: pointer;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+  }
+
+  .carousel-item:hover {
+    transform: scale(1.05);
+  }
+
+  .food-name {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 0.2rem;
+  }
+
+  .food-value {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #a84146;
+    margin: 0.2rem;
+  }
+}

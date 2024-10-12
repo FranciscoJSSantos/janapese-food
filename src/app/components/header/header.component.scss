@@ -11,6 +11,10 @@
   }
 }
 
+a {
+  text-decoration: none !important;
+}
+
 @media screen and (max-width: 768px) {
   .header_component {
     display: none !important;
